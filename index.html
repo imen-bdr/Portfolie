@@ -115,6 +115,17 @@
     .project-card p{flex:1;color:#3b2f20}
     .project-actions{display:flex;gap:10px;align-items:center}
     .badge{font-size:12px;padding:6px 8px;border-radius:8px;border:1px solid #ffe7c8;background:#fff8f0;color:#b86b00}
+    .project-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap} /* allow wrapping */
+  .project-actions .report-btn{
+    flex-basis:100%;       /* force to next line */
+    max-width:200px;      /* keep button reasonable width */
+    margin-top:8px;
+  }
+
+  /* optional: keep it full-width on small screens */
+  @media (max-width:480px){
+    .project-actions .report-btn{max-width:100%}
+  }
 
     /* CONTACT */
     .contact-wrap{max-width:720px;margin:0 auto;margin-top:14px}
@@ -209,7 +220,7 @@
     <section id="home" class="hero container" aria-labelledby="home-title">
       <div class="hero-left" data-aos="fade-right">
         <h1 id="home-title">Hey — I'm <span>Imene</span></h1>
-        <div class="typewriter">I'm a <span>WEB--Designer</span></div>
+        <div class="typewriter">I'm a <span>WEB-Designer</span></div>
         <p class="lead">A creative web designer passionate about elegant and modern designs.</p>
 
         <div class="hero-ctas">
@@ -334,6 +345,32 @@
       )">
       Details
     </button>
+  </div>
+</article>
+
+<!-- Project 5: scene -->
+<article class="project-card" data-aos="fade-up" role="listitem">
+  <h3>Scene modeling</h3>
+  <p>a scene representing a simulation of the physical behavior of materials.</p>
+  <div class="project-actions">
+    <!-- رابط الموقع -->
+
+  <a class="btn outline" href="https://github.com/imen-bdr/Portfolie/raw/main/Tutoriel2.blend" target="_blank" rel="noopener"> Open</a>
+
+  <a class="btn outline" href="https://github.com/imen-bdr/Portfolie/raw/main/tut0001-0250.mp4" target="_blank"  rel="noopener">Rendering</a>
+  <br><br>
+    <!-- تفاصيل إضافية -->
+ 
+<!-- Option B : ouvrir la modal de projet et y fournir le lien PDF (URL encodée) -->
+<button class="btn report-btn"
+  onclick="openProjectModal(
+    'Report — Scene modeling',
+    'You can download the scene modeling project report here.',
+    'https://github.com/imen-bdr/Portfolie/raw/main/Rapport%20-%20Simulation%20D%27eau%20Dans%20Blender.pdf'
+  )">
+  Report
+</button>
+
   </div>
 </article>
 
@@ -540,4 +577,3 @@
   </script>
 </body>
 </html>
-
