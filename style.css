@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 * {
@@ -1076,4 +1076,13 @@ section {
   display: block !important;
   overflow: hidden !important;
 }
->>>>>>> 755f102073b776b00b8282a4a721fb31943db87e
+#bgVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
